@@ -8,6 +8,9 @@ temp = .5
 n_chars = 100
 
 print('--------- Generating ---------')
+# define the model
+m = Model(path)
+
 # test for vaild model
 if os.path.isfile('model_instance.tflearn.index') and os.path.isfile('model_instance.tflearn.meta') :
     m.model.load('model_instance.tflearn')
@@ -16,7 +19,6 @@ else :
     print('# No model found. Please train before generating.')
 
 # load model
-m = Model(path)
 m.model.load('model_instance.tflearn')
 
 # make text from seed
