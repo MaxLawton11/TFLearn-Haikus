@@ -22,7 +22,7 @@ else :
 m.model.load('model_instance.tflearn')
 
 # make text from seed
-text = m.generate(n_chars, seed, temp)
+text = m.generate(seed, n_chars, temp)
 print(f'Seed: "{seed}"')
 print(f'n_chars: "{n_chars}"')
 print('Text: ', text)
