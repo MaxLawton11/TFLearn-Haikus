@@ -1,4 +1,4 @@
-from Model import *
+from model_class import *
 import os
 import os.path
 
