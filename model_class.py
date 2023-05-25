@@ -26,7 +26,7 @@ class Model:
         self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
                 n_epoch=n_epoch, run_id='text_generation')
         
-    def generate(self, length: int, seed: str, temperature=0.5) :
+    def generate(self, seed: str, length=25: int, temperature=0.5) :
         # generate text
         return self.model.generate(length, temperature=temperature, seq_seed=seed)
     
