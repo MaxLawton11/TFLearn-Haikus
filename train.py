@@ -2,14 +2,14 @@ from model_class import *
 import os
 import os.path
 
-path = 'haiku_dataset.text'
+ds_path = 'haiku_dataset.text'
 n_epoch = 10
 
 print('--------- Training ---------')
 print(f'# Running {n_epoch} epoch(s)')
 
 # create model
-m = Model(f'{path}')
+m = Model(ds_path)
 
 # load model if there is one
 if os.path.isfile('model_instance.tflearn.index') and os.path.isfile('model_instance.tflearn.meta') :
