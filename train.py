@@ -4,7 +4,7 @@ import os.path
 
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-n_epoch = 3
+n_epoch = 10
 
 print('--------- Training ---------')
 print(f'# Running {n_epoch} epoch(s)')
