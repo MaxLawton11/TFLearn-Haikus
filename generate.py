@@ -2,24 +2,25 @@ from model_class import *
 import os
 import os.path
 
-path = 'haiku_dataset.text'
+ds_path = 'haiku_dataset.text'
+model_path = 'model_instance.tflearn'
 seed = "the world is finite"
 temp = 0.5
 n_chars = 100
 
 print('--------- Generating ---------')
 # define the model
-m = Model(path)
+m = Model(ds_path)
 
 # test for vaild model
-if os.path.isfile('model_instance.tflearn.index') and os.path.isfile('model_instance.tflearn.meta') :
+if os.path.isfile(f'{model_path}.index') and os.path.isfile(f'{model_path}.meta') :
     m.model.load('model_instance.tflearn')
-    print('# Loaded  model')
+    print(f'# Loaded  model ({model_path})')
 else :
     print('# No model found. Please train before generating.')
 
 # load model
-m.model.load('model_instance.tflearn')
+m.model.load(model_path)
 
 # make text from seed
 text = m.generate(seed, n_chars, temp)
