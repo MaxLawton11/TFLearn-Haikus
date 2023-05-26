@@ -3,7 +3,7 @@ import os
 import os.path
 
 path = 'haiku_dataset.text'
-seed = "our destination"
+seed = "the world is finite"
 temp = .5
 n_chars = 100
 
