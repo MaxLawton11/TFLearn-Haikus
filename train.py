@@ -1,7 +1,6 @@
 from model_class import *
 import os
 import os.path
-import sys
 
 path = 'haiku_dataset.text'
 n_epoch = 10
