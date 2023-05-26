@@ -24,7 +24,7 @@ class Model:
     def train(self, n_epoch: int) :
         # train the model
         self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
-                n_epoch=n_epoch, run_id='text_generation')
+                n_epoch=n_epoch, run_id='haiku')
         
     def generate(self, seed: str, length=25: int, temperature=0.5) :
         # generate text
