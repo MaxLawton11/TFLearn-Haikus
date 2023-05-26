@@ -4,7 +4,7 @@ import os.path
 
 path = 'haiku_dataset.text'
 seed = "the world is finite"
-temp = .5
+temp = 0.5
 n_chars = 100
 
 print('--------- Generating ---------')
