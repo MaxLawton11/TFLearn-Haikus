@@ -6,7 +6,7 @@ ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
 seed = "our destination"
 temp = 0.1
-n_chars = 10
+n_chars = 100
 
 print('--------- Generating ---------')
 # define the model
