@@ -4,7 +4,7 @@ import os.path
 
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-seed = "test of faith / today i"
+seed = "test of faith / today i "
 temp = 0.01
 n_chars = 100
 
