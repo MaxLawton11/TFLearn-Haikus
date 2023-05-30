@@ -4,7 +4,7 @@ import os.path
 
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-seed = "the world is finite"
+seed = "our destination"
 temp = 0.1
 n_chars = 10
 
