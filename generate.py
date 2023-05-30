@@ -26,7 +26,7 @@ m.model.load(model_path)
 text = m.generate(seed, n_chars, temp)
 print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
-print('Text: ', text)
+print('Text: \n', text)
 del m
 
 print('--------- Success ---------')
