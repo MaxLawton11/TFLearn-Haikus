@@ -5,7 +5,7 @@ import random
 
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-seed = ""
+seed = ''
 temp = .01
 n_chars = 300
 
