@@ -7,7 +7,7 @@ ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
 seed = ""
 temp = .01
-n_chars = 100
+n_chars = 300
 
 # get random line from file
 file_lines = open(ds_path).read().splitlines()
