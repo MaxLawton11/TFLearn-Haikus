@@ -1,12 +1,19 @@
 from model_class import *
 import os
 import os.path
+import random
 
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-seed = "test of faith / today i "
+seed = ""
 temp = .01
 n_chars = 100
+
+# get random line from file
+file_lines = open(ds_path).read().splitlines()
+random_line = random.choice(lines)
+seed = random_line[0:26] # only get first 25chars and set to seed
+del file_lines; del random_line;
 
 print('--------- Generating ---------')
 # define the model
