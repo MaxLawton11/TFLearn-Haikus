@@ -5,9 +5,11 @@ import random
 
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-seed = '' # if empty, will randomly pick from dataset
 temp = .01
 n_chars = 300
+
+# enter any seed under 25 characters long 
+seed = '' 
 
 # get random line from file
 file_lines = open(ds_path).read().splitlines()
