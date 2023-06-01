@@ -3,19 +3,24 @@ import os
 import os.path
 import random
 
+# vars
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
 temp = .01
 n_chars = 300
 
-# enter any seed under 25 characters long 
-seed = '' 
+# enter any seed under 25 characters long, any more will be cut off!
+# if empty, will randomly pull from dataset
+seed = ''
 
-# get random line from file
-file_lines = open(ds_path).read().splitlines()
-random_line = random.choice(file_lines)
-seed = random_line[0:25] # only get first 25chars and set to seed
-del file_lines; del random_line;
+#test for empty string
+if seed == '' :
+    # get random line from file and pick one
+    file_lines = open(ds_path).read().splitlines()
+    seed = random.choice(file_lines)
+    del file_lines
+
+seed = seed[0:25] # cut off extra seed
 
 print('--------- Generating ---------')
 # define the model
