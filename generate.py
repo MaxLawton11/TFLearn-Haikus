@@ -6,6 +6,7 @@ import random
 # vars
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
+live_display = True
 temp = .01
 n_chars = 300
 
@@ -37,7 +38,7 @@ else :
 m.model.load(model_path)
 
 # make text from seed
-text = m.generate(seed, n_chars, temp)
+text = m.generate(seed, n_chars, temp, live_display)
 del m
 
 # format and print text
