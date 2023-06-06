@@ -50,7 +50,7 @@ text = text.replace('\n','/').replace('$','/').split('/') # make new lines from 
 
 for line in text :
     if line[0] == ' ' :
-        print(line[1:]
+        print(line[1:])
     else :
         print(line)
 
