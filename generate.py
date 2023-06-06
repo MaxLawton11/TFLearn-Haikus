@@ -54,7 +54,7 @@ print('\nProcessed Text: ')
 # this makes sure that we end and an '$'.
 # if there is none, then all is passed
 if '$' in text :
-    text.split('$')
+    text = text.split('$')
     text.pop()
     text = ''.join(text)
 
