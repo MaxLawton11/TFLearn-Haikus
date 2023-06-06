@@ -26,9 +26,9 @@ class Model:
         self.model.fit(self.X, self.Y, validation_set=0.1, batch_size=128,
                 n_epoch=n_epoch, run_id='haiku')
         
-    def generate(self, seed: str, length: int, temperature: float) :
+    def generate(self, seed: str, length: int, temperature: float, live_display: bool) :
         # generate text
-        return self.model.generate(length, temperature=temperature, seq_seed=seed, display=True)
+        return self.model.generate(length, temperature=temperature, seq_seed=seed, display=live_display)
     
     def save(self, filename: str):
         # save the trained model to a file
