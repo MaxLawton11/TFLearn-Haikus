@@ -45,7 +45,8 @@ print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
 print('Text: ')
 
-text = text.replace('\n','/').replace('$','/').split('/')
+text = ' '.join(text.split()) # turn everythin to single space
+text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
 print(text)
 
 print('--------- Success ---------')
