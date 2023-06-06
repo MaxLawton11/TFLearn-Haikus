@@ -47,6 +47,11 @@ print('Text: ')
 
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
-print(text)
+
+for line in text :
+    if line[0] == ' ' :
+        print(line[1:]
+    else :
+        print(line)
 
 print('--------- Success ---------')
