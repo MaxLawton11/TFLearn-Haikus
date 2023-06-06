@@ -43,7 +43,11 @@ del m
 # format and print text
 print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
-print('Text: ')
+
+print('Raw Text: ')
+print(text)
+
+print('\nProcessed Text: ')
 
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
