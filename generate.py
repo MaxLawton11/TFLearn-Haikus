@@ -46,7 +46,6 @@ print(f'n_chars: {n_chars}')
 print('Text: ')
 
 text = text.replace('$','/').split('/')
-for line in text :
-    print(f"[{line}]")
+print(text)
 
 print('--------- Success ---------')
