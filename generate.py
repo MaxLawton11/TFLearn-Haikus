@@ -43,6 +43,7 @@ del m
 # format and print text
 print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
+print(f'Temp: {temp}')
 
 print('Raw Text: ')
 print(text)
