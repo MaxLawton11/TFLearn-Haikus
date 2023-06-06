@@ -45,7 +45,7 @@ print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
 print(f'Temp: {temp}')
 
-print('Raw Text: ')
+print('\nRaw Text: ')
 print(text)
 
 print('\nProcessed Text: ')
