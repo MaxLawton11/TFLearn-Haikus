@@ -49,6 +49,11 @@ text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
 
 for line in text :
+    # idk for some reson this wants to be here
+    if len(line) < 1 :
+        break
+       
+    # remove space if there is one at the start
     if line[0] == ' ' :
         print(line[1:])
     else :
