@@ -28,7 +28,7 @@ class Model:
         
     def generate(self, seed: str, length: int, temperature: float) :
         # generate text
-        return self.model.generate(length, temperature=temperature, seq_seed=seed)
+        return self.model.generate(length, temperature=temperature, seq_seed=seed, display=True)
     
     def save(self, filename: str):
         # save the trained model to a file
