@@ -47,7 +47,7 @@ print(f'n_chars: {n_chars}')
 print('Raw Text: ')
 print(text)
 
-print('\nProcessed Text: ')
+print('\nProcessed Text:\n')
 
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
@@ -63,4 +63,4 @@ for line in text :
     else :
         print(line)
 
-print('--------- Success ---------')
+print('--------- Success ---------') # we done here
