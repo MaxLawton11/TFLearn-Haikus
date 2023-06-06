@@ -51,6 +51,13 @@ print(text)
 
 print('\nProcessed Text: ')
 
+# this makes sure that we end and an '$'.
+# if there is none, then all is passed
+if '$' in text :
+    text.split('$')
+    text.pop()
+    text = ''.join(text)
+
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
 
