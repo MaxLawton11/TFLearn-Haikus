@@ -45,7 +45,7 @@ print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
 print('Text: ')
 
-text = text.replace('$','/').split('/')
+text = text.replace('\n','/').replace('$','/').split('/')
 print(text)
 
 print('--------- Success ---------')
