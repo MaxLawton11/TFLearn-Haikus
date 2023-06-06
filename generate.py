@@ -38,9 +38,15 @@ m.model.load(model_path)
 
 # make text from seed
 text = m.generate(seed, n_chars, temp)
+del m
+
+# format and print text
 print(f'Seed: "{seed}"')
 print(f'n_chars: {n_chars}')
-print('Text: \n', text)
-del m
+print('Text: ')
+
+text = text.replace('$','/')split('/')
+for line in text :
+    print(line)
 
 print('--------- Success ---------')
