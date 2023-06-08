@@ -53,19 +53,19 @@ print('\nProcessed Text: ')
 
 # this makes sure that we end and an '$'.
 # if there is none, then all is passed
+# we also need to use a diffent var to keep the $ when we split
 if '$' in text :
     trimed_text = text
     trimed_text = trimed_text.split('$')
     trimed_text.pop()
     trimed_text = ''.join(trimed_text)
-    text = text[:(len(trimed_text)+text.count('$'))]
+    text = text[:(len(trimed_text)+text.count('$'))] # slice text until the last $
 
 text = ' '.join(text.split()) # turn everythin to single space
-text = text.replace('\n','/').replace('$','/')
+text = text.replace('\n','/').replace('$','/') #replace other chars with /
 text = text.split('/') # slit at /
 
-print(text)
-
+# loop and print
 for line in text :
     # idk for some reson this wants to be here
     if len(line) < 1 :
