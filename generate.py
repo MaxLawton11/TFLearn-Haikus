@@ -59,7 +59,8 @@ if '$' in text :
     text = ''.join(text)
 
 text = ' '.join(text.split()) # turn everythin to single space
-text = text.replace('\n','/').replace('$','#') # make new lines from / and $
+text = text.replace('$','#')
+text = text.replace('\n','/')
 text = text.split('/') # slit at /
 
 print(text)
