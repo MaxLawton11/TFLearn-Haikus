@@ -54,13 +54,14 @@ print('\nProcessed Text: ')
 # this makes sure that we end and an '$'.
 # if there is none, then all is passed
 if '$' in text :
-    text = text.split('$')
-    text.pop()
-    text = ''.join(text)
+    comp_text = text
+    comp_text = comp_text.split('$')
+    comp_text.pop()
+    comp_text = ''.join(text)
+    text = text[:len(comp_text)]
 
 text = ' '.join(text.split()) # turn everythin to single space
-text = text.replace('$','#')
-text = text.replace('\n','/')
+text = text.replace('\n','/').replace('$','/')
 text = text.split('/') # slit at /
 
 print(text)
