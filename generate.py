@@ -7,7 +7,7 @@ import random
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
 live_display = False
-temp = .01
+temp = .1
 n_chars = 300
 
 # enter any seed under 25 characters long, any more will be cut off!
