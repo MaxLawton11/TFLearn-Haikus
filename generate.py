@@ -61,6 +61,8 @@ if '$' in text :
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/').split('/') # make new lines from / and $
 
+print(text)
+
 for line in text :
     # idk for some reson this wants to be here
     if len(line) < 1 :
