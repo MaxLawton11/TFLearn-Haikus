@@ -57,7 +57,7 @@ if '$' in text :
     comp_text = text
     comp_text = comp_text.split('$')
     comp_text.pop()
-    comp_text = ''.join(text)
+    comp_text = ''.join(comp_text)
     print(len(text),len(comp_text))
 
 text = ' '.join(text.split()) # turn everythin to single space
