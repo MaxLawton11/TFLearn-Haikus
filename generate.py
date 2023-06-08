@@ -6,7 +6,7 @@ import random
 # vars
 ds_path = 'haiku_dataset.text'
 model_path = 'model_instance.tflearn'
-live_display = True
+live_display = False
 temp = .01
 n_chars = 300
 
