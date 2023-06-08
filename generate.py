@@ -58,7 +58,7 @@ if '$' in text :
     comp_text = comp_text.split('$')
     comp_text.pop()
     comp_text = ''.join(text)
-    text = text[:len(comp_text)]
+    print(len(text),len(comp_text))
 
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/')
