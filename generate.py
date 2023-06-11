@@ -60,6 +60,7 @@ if '$' in text :
     trimed_text.pop()
     trimed_text = ''.join(trimed_text)
     text = text[:(len(trimed_text)+text.count('$'))] # slice text until the last $
+    del trimed_text
 
 text = ' '.join(text.split()) # turn everythin to single space
 text = text.replace('\n','/').replace('$','/') #replace other chars with /
