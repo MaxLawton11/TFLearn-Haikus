@@ -24,7 +24,7 @@ if seed == '' :
 seed = seed[0:25] # cut off extra seed
 
 print('--------- Generating ---------')
-# define the model
+# load model
 m = Model(ds_path)
 
 # test for vaild model
