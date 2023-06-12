@@ -32,7 +32,7 @@ if os.path.isfile(f'{model_path}.index') and os.path.isfile(f'{model_path}.meta'
     m.model.load('model_instance.tflearn')
     print(f'# Loaded  model ({model_path})')
 else :
-    print('# No model found. Please train before generating. See Readme.md for details.')
+    print('# No model found. Please train before generating. See README.md for details.')
 
 # load model
 m.model.load(model_path)
