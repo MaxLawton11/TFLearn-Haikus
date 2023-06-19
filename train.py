@@ -3,7 +3,7 @@ import os
 import os.path
 
 ds_path = 'haiku_dataset.text'
-model_path = 'model_instance.tflearn'
+model_path = 'model_instance.tflearn' #Note: this file don't exist. It is in both model_instance.tflearn.index and model_instance.tflearn.meta
 n_epoch = 1
 
 print('--------- Training ---------')
