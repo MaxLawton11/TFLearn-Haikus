@@ -39,7 +39,7 @@ m.model.load(model_path)
 
 # make text from seed
 text = m.generate(seed, n_chars, temp, live_display)
-del m
+del m # hopefully prevents mem leak
 
 # format and print text
 print(f'Seed: "{seed}"')
